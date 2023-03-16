@@ -151,6 +151,20 @@ services:
         url: "https://general.rpakishore.co.in/Dead_loads"
         target: "_blank" # optional html a tag target attribute
         tagstyle: "is-success"
+      - name: "Snow/Wind Load Station Locator"
+        icon: "fa-solid fa-snowflake"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Identify closest design stations to GPS coordinates" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.rpakishore.co.in/Snow_Wind_Station_Locator"
+        target: "_blank" # optional html a tag target attribute
+        tag: "NBCC 2020"
+      - name: "Piping Dimensions & Properties"
+        icon: "fa-solid fa-database"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Std pipe sizes, weights and flowrates" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.rpakishore.co.in/Piping_data"
+        target: "_blank" # optional html a tag target attribute
+        tag: "ASME B36.10"
 
   - name: "Concrete"
     icon: "fas fa-building"
