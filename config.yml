@@ -98,60 +98,6 @@ links:
 # First level array represents a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Design Aids"
-    icon: "fa fa-bolt"
-    # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
-    # logo: "path/to/logo"
-    items:
-      #- name: "SAP/ETABS"
-      #  icon: "fas fa-sitemap"
-      #  #logo: "assets/tools/sample.png"
-      #  subtitle: "SAP and ETABS design Aids" # optional, if no subtitle is defined, PiHole statistics will be shown
-      #  tag: "SAP2000 23"
-      #  url: "https://sap.rpakishore.co.in"
-      #  target: "_blank" # optional html a tag target attribute
-      #  tagstyle: "is-success"
-        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-        # background: red # optional color for card to set color directly without custom stylesheet
-      #- name: "Awesome app"
-      #  logo: "assets/tools/sample.png"
-      #  # Alternatively a fa icon can be provided:
-      #  # icon: "fab fa-jenkins"
-      #  subtitle: "Bookmark example"
-      #  tag: "app"
-      #  keywords: "self hosted reddit" # optional keyword used for searching purpose
-      #  url: "https://www.reddit.com/r/selfhosted/"
-      #  #target: "_blank" # optional html tag target attribute
-      #  tagstyle: "is-success"
-      #- name: "Another one"
-      #  logo: "assets/tools/sample2.png"
-      #  subtitle: "Another application"
-      #  tag: "app"
-      #  # Optional tagstyle
-      #  tagstyle: "is-success"
-      #  url: "#"
-      - name: "Dead Loads"
-        icon: "fa fa-arrow-down"
-        #logo: "assets/tools/sample.png"
-        subtitle: "Density of typical materials seen in construction" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "https://general.rpakishore.co.in/Dead_loads"
-        target: "_blank" # optional html a tag target attribute
-        tagstyle: "is-success"
-      - name: "Snow/Wind Load Station Locator"
-        icon: "fa-solid fa-snowflake"
-        #logo: "assets/tools/sample.png"
-        subtitle: "Identify closest design stations to GPS coordinates" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "https://general.rpakishore.co.in/Snow_Wind_Station_Locator"
-        target: "_blank" # optional html a tag target attribute
-        tag: "NBCC 2020"
-      - name: "Piping Dimensions & Properties"
-        icon: "fa-solid fa-database"
-        #logo: "assets/tools/sample.png"
-        subtitle: "Std pipe sizes, weights and flowrates" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "https://general.rpakishore.co.in/Piping_data"
-        target: "_blank" # optional html a tag target attribute
-        tag: "ASME B36.10"
-
   - name: "Concrete"
     icon: "fas fa-building"
     items:
@@ -201,3 +147,64 @@ services:
       #  tagstyle: "is-success"
       #  # class: "green" # optional custom CSS class for card, useful with custom stylesheet
       #  # background: red # optional color for card to set color directly without custom stylesheet
+      - name: "Piping Dimensions & Properties"
+        icon: "fa-solid fa-database"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Std pipe sizes, weights and flowrates" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.rpakishore.co.in/Piping_data"
+        target: "_blank" # optional html a tag target attribute
+        tag: "ASME B36.10"
+
+  - name: "Loadings"
+    icon: "fa fa-bolt"
+    # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
+    # logo: "path/to/logo"
+    items:
+      #- name: "SAP/ETABS"
+      #  icon: "fas fa-sitemap"
+      #  #logo: "assets/tools/sample.png"
+      #  subtitle: "SAP and ETABS design Aids" # optional, if no subtitle is defined, PiHole statistics will be shown
+      #  tag: "SAP2000 23"
+      #  url: "https://sap.rpakishore.co.in"
+      #  target: "_blank" # optional html a tag target attribute
+      #  tagstyle: "is-success"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+      #- name: "Awesome app"
+      #  logo: "assets/tools/sample.png"
+      #  # Alternatively a fa icon can be provided:
+      #  # icon: "fab fa-jenkins"
+      #  subtitle: "Bookmark example"
+      #  tag: "app"
+      #  keywords: "self hosted reddit" # optional keyword used for searching purpose
+      #  url: "https://www.reddit.com/r/selfhosted/"
+      #  #target: "_blank" # optional html tag target attribute
+      #  tagstyle: "is-success"
+      #- name: "Another one"
+      #  logo: "assets/tools/sample2.png"
+      #  subtitle: "Another application"
+      #  tag: "app"
+      #  # Optional tagstyle
+      #  tagstyle: "is-success"
+      #  url: "#"
+      - name: "Dead Loads"
+        icon: "fa fa-arrow-down"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Density of typical materials seen in construction" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.rpakishore.co.in/Dead_loads"
+        target: "_blank" # optional html a tag target attribute
+        tagstyle: "is-success"
+      - name: "Snow/Wind Load Station Locator"
+        icon: "fa-solid fa-snowflake"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Identify closest design stations to GPS coordinates" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.rpakishore.co.in/Snow_Wind_Station_Locator"
+        target: "_blank" # optional html a tag target attribute
+        tag: "NBCC 2020"
+      - name: "Seismic Design Loads for Rect. Liquid Containing Tanks"
+        icon: "fas fa-globe-americas"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Based on ACI-350.3-01" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loading.rpakishore.co.in/Rect_Tank-Seismic"
+        target: "_blank" # optional html a tag target attribute
+        tag: "draft-release"
