@@ -93,6 +93,10 @@ links:
 #  - name: "Second Page"
 #    icon: "fas fa-file-alt"
 #    url: "#page2"
+  - name: "Status"
+    icon: "fas fa-heartbeat"
+    url: "https://uptime.rpakishore.co.in/status/structural"
+    target: "_blank" # optional html tag target attribute
 
 # Services
 # First level array represents a group.
@@ -106,7 +110,7 @@ services:
         #logo: "assets/tools/sample.png"
         subtitle: "Tension/Compression/Hooked dev. lengths" # optional, if no subtitle is defined, PiHole statistics will be shown
         tag: "CSA A23.3-19"
-        url: "https://general.rpakishore.co.in/Development_length"
+        url: "https://general.struct.work/Development_length"
         target: "_blank" # optional html a tag target attribute
       #  tagstyle: "is-success"
         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
@@ -117,7 +121,7 @@ services:
         icon: "fas fa-arrows-v"
         subtitle: "Reinforced concrete slab design per CSA/ACI" # optional, if no subtitle is defined, PiHole statistics will be shown
         #tag: "In-Progress"
-        url: "https://slabs.rpakishore.co.in/"
+        url: "https://slabs.struct.work/"
         target: "_blank" # optional html a tag target attribute
         tagstyle: "is-info"
         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
@@ -133,7 +137,7 @@ services:
         #logo: "assets/tools/sample.png"
         subtitle: "Structural steel section properties" # optional, if no subtitle is defined, PiHole statistics will be shown
         tag: "CSA"
-        url: "https://general.rpakishore.co.in/Section_properties"
+        url: "https://general.struct.work/Section_properties"
         target: "_blank" # optional html a tag target attribute
         tagstyle: "is-success"
         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
@@ -151,7 +155,7 @@ services:
         icon: "fa-solid fa-database"
         #logo: "assets/tools/sample.png"
         subtitle: "Std pipe sizes, weights and flowrates" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "https://general.rpakishore.co.in/Piping_data"
+        url: "https://general.struct.work/Piping_data"
         target: "_blank" # optional html a tag target attribute
         tag: "ASME B36.10"
 
@@ -191,20 +195,26 @@ services:
         icon: "fa fa-arrow-down"
         #logo: "assets/tools/sample.png"
         subtitle: "Density of typical materials seen in construction" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "https://general.rpakishore.co.in/Dead_loads"
+        url: "https://general.struct.work/Dead_loads"
         target: "_blank" # optional html a tag target attribute
         tagstyle: "is-success"
       - name: "Snow/Wind Load Station Locator"
         icon: "fa-solid fa-snowflake"
         #logo: "assets/tools/sample.png"
         subtitle: "Identify closest design stations to GPS coordinates" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "https://general.rpakishore.co.in/Snow_Wind_Station_Locator"
+        url: "https://general.struct.work/Snow_Wind_Station_Locator"
         target: "_blank" # optional html a tag target attribute
         tag: "NBCC 2020"
       - name: "Seismic Design Loads for Rect. Liquid Containing Tanks"
         icon: "fas fa-globe-americas"
         #logo: "assets/tools/sample.png"
-        subtitle: "Based on ACI-350.3-01" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "https://loading.rpakishore.co.in/Rect_Tank-Seismic"
+        subtitle: "Based on ACI-350.3-06" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loadings.struct.work/Rect_Tank-Seismic"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Blast Loads"
+        icon: "fas fa-bomb"
+        subtitle: "Based on UFC-3-340-02" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loadings.struct.work/Blast_loads"
         target: "_blank" # optional html a tag target attribute
         tag: "draft-release"
+
