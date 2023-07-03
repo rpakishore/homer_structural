@@ -210,7 +210,8 @@ services:
         tagstyle: "is-success"
 
   - name: "Concrete"
-    icon: "fas fa-building"
+    #icon: "fas fa-building"
+    logo: "assets/tools/concrete.png"
     items:
       - name: "Development length"
         #icon: "fas fa-sliders"
