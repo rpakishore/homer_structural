@@ -5,7 +5,7 @@
 title: "Structural Calculations"
 subtitle: "AK"
 documentTitle: "Ak-Structural Calculations" # Customize the browser tab text
-logo: "assets/logo.png"
+logo: "assets/tools/logo_colormatch.png"
 header: true # Set to false to hide the header
 footer: '<p>Contact: <a href="https://portfolio.rpakishore.co.in/">Arun Kishore</a>' # set false if you want to hide it.
 
@@ -102,63 +102,6 @@ links:
 # First level array represents a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Concrete"
-    icon: "fas fa-building"
-    items:
-      - name: "Development length"
-        icon: "fas fa-sliders"
-        #logo: "assets/tools/sample.png"
-        subtitle: "Tension/Compression/Hooked dev. lengths" # optional, if no subtitle is defined, PiHole statistics will be shown
-        tag: "CSA A23.3-19"
-        url: "https://general.struct.work/Development_length"
-        target: "_blank" # optional html a tag target attribute
-      #  tagstyle: "is-success"
-        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-        # background: red # optional color for card to set color directly without custom stylesheet
-
-      - name: "One-way slab design"
-        #logo: "assets/tools/sample.png"
-        icon: "fas fa-arrows-v"
-        subtitle: "Reinforced concrete slab design per CSA/ACI" # optional, if no subtitle is defined, PiHole statistics will be shown
-        #tag: "In-Progress"
-        url: "https://slabs.struct.work/"
-        target: "_blank" # optional html a tag target attribute
-        tagstyle: "is-info"
-        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-        # background: red # optional color for card to set color directly without custom stylesheet
-
-
-  - name: "Steel"
-    #logo: "assets/steel.png"
-    icon: "fas fa-anchor"
-    items:
-      - name: "Section Properties"
-        icon: "fas fa-wrench"
-        #logo: "assets/tools/sample.png"
-        subtitle: "Structural steel section properties" # optional, if no subtitle is defined, PiHole statistics will be shown
-        tag: "CSA"
-        url: "https://general.struct.work/Section_properties"
-        target: "_blank" # optional html a tag target attribute
-        tagstyle: "is-success"
-        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-        # background: red # optional color for card to set color directly without custom stylesheet
-      #- name: "Development length"
-      #  #logo: "assets/tools/sample.png"
-      #  subtitle: "Tension/Compression/Hooked dev. lengths" # optional, if no subtitle is defined, PiHole statistics will be shown
-      #  tag: "concrete"
-      #  url: "https://rpakishore-stru-development-length-about-vpt3t6.streamlitapp.com/"
-      #  target: "_blank" # optional html a tag target attribute
-      #  tagstyle: "is-success"
-      #  # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-      #  # background: red # optional color for card to set color directly without custom stylesheet
-      - name: "Piping Dimensions & Properties"
-        icon: "fa-solid fa-database"
-        #logo: "assets/tools/sample.png"
-        subtitle: "Std pipe sizes, weights and flowrates" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "https://general.struct.work/Piping_data"
-        target: "_blank" # optional html a tag target attribute
-        tag: "ASME B36.10"
-
   - name: "Loadings"
     icon: "fa fa-bolt"
     # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
@@ -197,24 +140,101 @@ services:
         subtitle: "Density of typical materials seen in construction" # optional, if no subtitle is defined, PiHole statistics will be shown
         url: "https://general.struct.work/Dead_loads"
         target: "_blank" # optional html a tag target attribute
-        tagstyle: "is-success"
       - name: "Snow/Wind Load Station Locator"
-        icon: "fa-solid fa-snowflake"
-        #logo: "assets/tools/sample.png"
+        #icon: "fa-solid fa-snowflake"
+        logo: "assets/tools/canada.png"
         subtitle: "Identify closest design stations to GPS coordinates" # optional, if no subtitle is defined, PiHole statistics will be shown
         url: "https://general.struct.work/Snow_Wind_Station_Locator"
         target: "_blank" # optional html a tag target attribute
         tag: "NBCC 2020"
       - name: "Seismic Design Loads for Rect. Liquid Containing Tanks"
-        icon: "fas fa-globe-americas"
-        #logo: "assets/tools/sample.png"
+        #icon: "fas fa-globe-americas"
+        logo: "assets/tools/water-tank-color.png"
         subtitle: "Based on ACI-350.3-06" # optional, if no subtitle is defined, PiHole statistics will be shown
         url: "https://loadings.struct.work/Rect_Tank-Seismic"
         target: "_blank" # optional html a tag target attribute
+        tag: "ACI 350.3-06"
       - name: "Blast Loads"
         icon: "fas fa-bomb"
         subtitle: "Based on UFC-3-340-02" # optional, if no subtitle is defined, PiHole statistics will be shown
         url: "https://loadings.struct.work/Blast_loads"
         target: "_blank" # optional html a tag target attribute
-        tag: "draft-release"
+        tag: "UFC-3-340-02"
+
+  - name: "Steel"
+    #logo: "assets/steel.png"
+    icon: "fas fa-anchor"
+    items:
+      - name: "Section Properties"
+        #icon: "fas fa-wrench"
+        logo: "assets/tools/steel-section.png"
+        subtitle: "Structural steel section properties" # optional, if no subtitle is defined, PiHole statistics will be shown
+        tag: "CSA"
+        url: "https://general.struct.work/Section_properties"
+        target: "_blank" # optional html a tag target attribute
+        tagstyle: "is-success"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+      #- name: "Development length"
+      #  #logo: "assets/tools/sample.png"
+      #  subtitle: "Tension/Compression/Hooked dev. lengths" # optional, if no subtitle is defined, PiHole statistics will be shown
+      #  tag: "concrete"
+      #  url: "https://rpakishore-stru-development-length-about-vpt3t6.streamlitapp.com/"
+      #  target: "_blank" # optional html a tag target attribute
+      #  tagstyle: "is-success"
+      #  # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+      #  # background: red # optional color for card to set color directly without custom stylesheet
+      - name: "Piping Dimensions & Properties"
+        icon: "fa-solid fa-database"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Std pipe sizes, weights and flowrates" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.struct.work/Piping_data"
+        target: "_blank" # optional html a tag target attribute
+        tag: "ASME B36.10"
+        tagstyle: "is-success"
+      - name: "Basic Weld Capacity"
+        #icon: "fas fa-link"
+        logo: "assets/tools/weld-color.png"
+        subtitle: "Calculate the capacity of weld per CSA S16 Cl.13.3" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loadings.struct.work/Weld_capacity"
+        target: "_blank" # optional html a tag target attribute
+        tag: "CSA S16-10th ed."
+        tagstyle: "is-success"
+      - name: "Basic Bolt Capacity"
+        #icon: "fas fa-link"
+        logo: "assets/tools/bolt-color.png"
+        subtitle: "Calculate the capacity of bolt per CSA S16 Cl.13.3" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loadings.struct.work/Bolt_capacity"
+        target: "_blank" # optional html a tag target attribute
+        tag: "CSA S16-10th ed."
+        tagstyle: "is-success"
+
+  - name: "Concrete"
+    icon: "fas fa-building"
+    items:
+      - name: "Development length"
+        #icon: "fas fa-sliders"
+        logo: "assets/tools/rebar-color.png"
+        subtitle: "Tension/Compression/Hooked dev. lengths" # optional, if no subtitle is defined, PiHole statistics will be shown
+        tag: "CSA A23.3-19"
+        url: "https://general.struct.work/Development_length"
+        target: "_blank" # optional html a tag target attribute
+      #  tagstyle: "is-success"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+
+      - name: "One-way slab design"
+        #logo: "assets/tools/sample.png"
+        icon: "fas fa-arrows-v"
+        subtitle: "Reinforced concrete slab design per CSA/ACI" # optional, if no subtitle is defined, PiHole statistics will be shown
+        #tag: "In-Progress"
+        url: "https://slabs.struct.work/"
+        target: "_blank" # optional html a tag target attribute
+        tagstyle: "is-info"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+        tag: "Proof of Concept Calc"
+
+
+
 
