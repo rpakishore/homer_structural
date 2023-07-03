@@ -1,0 +1,22 @@
+version: "3.8"
+
+networks:
+  nginx:
+    name: nginx
+
+services:
+  homer:
+    container_name: homer
+    hostname: homer
+    image: b4bz/homer:latest
+    restart: unless-stopped
+    volumes:
+      - .:/www/assets
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Vancouver
+    networks:
+      - nginx
+    ports:
+      - "9050:8080"
