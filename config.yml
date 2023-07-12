@@ -236,6 +236,20 @@ services:
         # background: red # optional color for card to set color directly without custom stylesheet
         tag: "Proof of Concept Calc"
 
+  - name: "Browser Add-ons"
+    #icon: "fas fa-building"
+    logo: "assets/tools/browser.png"
+    items:
+      - name: "Hilti Profis Aid"
+        #icon: "fas fa-sliders"
+        logo: "assets/tools/hilti.png"
+        subtitle: "Helpful recommendations to mitigate anchor failure" # optional, if no subtitle is defined, PiHole statistics will be shown
+        tag: "Javascript"
+        url: "https://github.com/rpakishore/hilti-profis-help"
+        target: "_blank" # optional html a tag target attribute
+      #  tagstyle: "is-success"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
 
 
 
