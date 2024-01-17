@@ -7,7 +7,7 @@ subtitle: "AK"
 documentTitle: "Ak-Structural Calculations" # Customize the browser tab text
 logo: "assets/tools/logo_colormatch.png"
 header: true 
-footer: '<p>Contact: <a href="https://portfolio.rpakishore.co.in/">Arun Kishore</a>' # set false if you want to hide it.
+footer: '<p>Contact: <a href="https://links.struct.work/portfolio">Arun Kishore</a>' # set false if you want to hide it.
 
 columns: "auto" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
 connectivityCheck: false 
@@ -53,7 +53,7 @@ colors:
 links:
   - name: "Github"
     icon: "fab fa-github"
-    url: "https://github.com/rpakishore"
+    url: "https://links.struct.work/github"
     target: "_blank" # optional html tag target attribute
 
   - name: "Status"
