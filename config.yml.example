@@ -1,0 +1,255 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v5/search for icons options
+
+title: "Structural Calculations"
+subtitle: "AK"
+documentTitle: "Ak-Structural Calculations" # Customize the browser tab text
+logo: "assets/tools/logo_colormatch.png"
+header: true # Set to false to hide the header
+footer: '<p>Contact: <a href="https://portfolio.rpakishore.co.in/">Arun Kishore</a>' # set false if you want to hide it.
+
+columns: "auto" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+connectivityCheck: false # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example).
+                        # You should set it to true when using an authentication proxy, it also reloads the page when a redirection is detected when checking connectivity.
+
+# Set the default layout and color scheme
+defaults:
+  layout: columns # Either 'columns', or 'list'
+  colorTheme: dark # One of 'auto', 'light', or 'dark'
+
+# Optional theming
+theme: default # 'default' or one of the themes available in 'src/assets/themes'.
+
+# Optional custom stylesheet
+# Will load custom CSS files. Especially useful for custom icon sets.
+# stylesheet:
+#   - "assets/custom.css"
+
+# Here is the exhaustive list of customization parameters
+# However all value are optional and will fallback to default if not set.
+# if you want to change only some of the colors, feel free to remove all unused key.
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#424242"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+    background-image: "assets/your/light/bg.png"
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+    background-image: "assets/your/dark/bg.png"
+
+# Optional message
+#message:
+  # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
+  # mapping: # allows to map fields from the remote format to the one expected by Homer
+  #   title: 'id' # use value from field 'id' as title
+  #   content: 'value' # value from field 'value' as content
+  # refreshInterval: 10000 # Optional: time interval to refresh message
+  #
+  # Real example using chucknorris.io for showing Chuck Norris facts as messages:
+  # url: https://api.chucknorris.io/jokes/random
+  # mapping:
+  #   title: 'id'
+  #   content: 'value'
+  # refreshInterval: 10000
+  #style: "is-success"
+  #title: "New URL!"
+  #icon: "fa fa-exclamation-triangle"
+  #content: "Calcs have been moved to a new (& more memorable) website ^. Don't worry about updating your bookmarks, Existing URLs will still redirect here."
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Github"
+    icon: "fab fa-github"
+    url: "https://github.com/rpakishore"
+    target: "_blank" # optional html tag target attribute
+#  - name: "link 2"
+#    icon: "fas fa-book"
+#    url: "https://github.com/bastienwirtz/homer"
+#  # this will link to a second homer page that will load config from page2.yml and keep default config values as in config.yml file
+#  # see url field and assets/page.yml used in this example:
+#  - name: "Second Page"
+#    icon: "fas fa-file-alt"
+#    url: "#page2"
+  - name: "Status"
+    icon: "fas fa-heartbeat"
+    url: "https://uptime.rpakishore.co.in/status/structural"
+    target: "_blank" # optional html tag target attribute
+
+# Services
+# First level array represents a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Loadings"
+    icon: "fa fa-bolt"
+    # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
+    # logo: "path/to/logo"
+    items:
+      #- name: "SAP/ETABS"
+      #  icon: "fas fa-sitemap"
+      #  #logo: "assets/tools/sample.png"
+      #  subtitle: "SAP and ETABS design Aids" # optional, if no subtitle is defined, PiHole statistics will be shown
+      #  tag: "SAP2000 23"
+      #  url: "https://sap.rpakishore.co.in"
+      #  target: "_blank" # optional html a tag target attribute
+      #  tagstyle: "is-success"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+      #- name: "Awesome app"
+      #  logo: "assets/tools/sample.png"
+      #  # Alternatively a fa icon can be provided:
+      #  # icon: "fab fa-jenkins"
+      #  subtitle: "Bookmark example"
+      #  tag: "app"
+      #  keywords: "self hosted reddit" # optional keyword used for searching purpose
+      #  url: "https://www.reddit.com/r/selfhosted/"
+      #  #target: "_blank" # optional html tag target attribute
+      #  tagstyle: "is-success"
+      #- name: "Another one"
+      #  logo: "assets/tools/sample2.png"
+      #  subtitle: "Another application"
+      #  tag: "app"
+      #  # Optional tagstyle
+      #  tagstyle: "is-success"
+      #  url: "#"
+      - name: "Dead Loads"
+        icon: "fa fa-arrow-down"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Density of typical materials seen in construction" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.struct.work/Dead_loads"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Snow/Wind Load Station Locator"
+        #icon: "fa-solid fa-snowflake"
+        logo: "assets/tools/canada.png"
+        subtitle: "Identify closest design stations to GPS coordinates" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.struct.work/Snow_Wind_Station_Locator"
+        target: "_blank" # optional html a tag target attribute
+        tag: "NBCC 2020"
+      - name: "Seismic Design Loads for Rect. Liquid Containing Tanks"
+        #icon: "fas fa-globe-americas"
+        logo: "assets/tools/water-tank-color.png"
+        subtitle: "Based on ACI-350.3-06" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loadings.struct.work/Rect_Tank-Seismic"
+        target: "_blank" # optional html a tag target attribute
+        tag: "ACI 350.3-06"
+      - name: "Blast Loads"
+        icon: "fas fa-bomb"
+        subtitle: "Based on UFC-3-340-02" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loadings.struct.work/Blast_loads"
+        target: "_blank" # optional html a tag target attribute
+        tag: "UFC-3-340-02"
+
+  - name: "Steel"
+    #logo: "assets/steel.png"
+    icon: "fas fa-anchor"
+    items:
+      - name: "Section Properties"
+        #icon: "fas fa-wrench"
+        logo: "assets/tools/steel-section.png"
+        subtitle: "Structural steel section properties" # optional, if no subtitle is defined, PiHole statistics will be shown
+        tag: "CSA"
+        url: "https://general.struct.work/Section_properties"
+        target: "_blank" # optional html a tag target attribute
+        tagstyle: "is-success"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+      #- name: "Development length"
+      #  #logo: "assets/tools/sample.png"
+      #  subtitle: "Tension/Compression/Hooked dev. lengths" # optional, if no subtitle is defined, PiHole statistics will be shown
+      #  tag: "concrete"
+      #  url: "https://rpakishore-stru-development-length-about-vpt3t6.streamlitapp.com/"
+      #  target: "_blank" # optional html a tag target attribute
+      #  tagstyle: "is-success"
+      #  # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+      #  # background: red # optional color for card to set color directly without custom stylesheet
+      - name: "Piping Dimensions & Properties"
+        icon: "fa-solid fa-database"
+        #logo: "assets/tools/sample.png"
+        subtitle: "Std pipe sizes, weights and flowrates" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://general.struct.work/Piping_data"
+        target: "_blank" # optional html a tag target attribute
+        tag: "ASME B36.10"
+        tagstyle: "is-success"
+      - name: "Basic Weld Capacity"
+        #icon: "fas fa-link"
+        logo: "assets/tools/weld-color.png"
+        subtitle: "Calculate the capacity of weld per CSA S16 Cl.13.3" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loadings.struct.work/Weld_capacity"
+        target: "_blank" # optional html a tag target attribute
+        tag: "CSA S16-10th ed."
+        tagstyle: "is-success"
+      - name: "Basic Bolt Capacity"
+        #icon: "fas fa-link"
+        logo: "assets/tools/bolt-color.png"
+        subtitle: "Calculate the capacity of bolt per CSA S16 Cl.13.3" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "https://loadings.struct.work/Bolt_capacity"
+        target: "_blank" # optional html a tag target attribute
+        tag: "CSA S16-10th ed."
+        tagstyle: "is-success"
+
+  - name: "Concrete"
+    #icon: "fas fa-building"
+    logo: "assets/tools/concrete.png"
+    items:
+      - name: "Development length"
+        #icon: "fas fa-sliders"
+        logo: "assets/tools/rebar-color.png"
+        subtitle: "Tension/Compression/Hooked dev. lengths" # optional, if no subtitle is defined, PiHole statistics will be shown
+        tag: "CSA A23.3-19"
+        url: "https://general.struct.work/Development_length"
+        target: "_blank" # optional html a tag target attribute
+      #  tagstyle: "is-success"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+
+      - name: "One-way slab design"
+        #logo: "assets/tools/sample.png"
+        icon: "fas fa-arrows-v"
+        subtitle: "Reinforced concrete slab design per CSA/ACI" # optional, if no subtitle is defined, PiHole statistics will be shown
+        #tag: "In-Progress"
+        url: "https://slabs.struct.work/"
+        target: "_blank" # optional html a tag target attribute
+        tagstyle: "is-info"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+        tag: "Proof of Concept Calc"
+
+  - name: "Browser Add-ons"
+    #icon: "fas fa-building"
+    logo: "assets/tools/browser.png"
+    items:
+      - name: "Hilti Profis Aid"
+        #icon: "fas fa-sliders"
+        logo: "assets/tools/hilti.png"
+        subtitle: "Helpful recommendations to mitigate anchor failure" # optional, if no subtitle is defined, PiHole statistics will be shown
+        tag: "Javascript"
+        url: "https://github.com/rpakishore/hilti-profis-help"
+        target: "_blank" # optional html a tag target attribute
+      #  tagstyle: "is-success"
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
+
+
+
