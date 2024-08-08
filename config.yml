@@ -135,6 +135,11 @@ services:
         url: "https://links.struct.work/Development-Length"
         target: "_blank"
 
+      - name: "Concrete Shear Friction"
+        subtitle: "Concrete shear friction capacity calculator"
+        url: "https://loadings.struct.work/Concrete_Shear_Interface"
+        target: "_blank"
+
       - name: "One-way slab design"
         icon: "fas fa-arrows-v"
         subtitle: "Reinforced concrete slab design per CSA/ACI"
